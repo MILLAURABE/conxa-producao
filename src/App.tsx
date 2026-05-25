@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 
-const SUPABASE_URL = "https://qtdbybarqfociewqfbgc.supabase.co";
-const SUPABASE_KEY = "sb_publishable_Yrd_d_Y07tUMqK_tNveGEQ_GJysk7yk";
+const SUPABASE_URL = "https://cdyesoicatjhgenxhatv.supabase.co";
+const SUPABASE_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkeWVzb2ljYXRqaGdlbnhoYXR2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3MDg1MjAsImV4cCI6MjA5NTI4NDUyMH0.Yw5R2Fojln-gL3RsF98VoYWYq9hV6GJqE918ZJ5BvOw;
 
 async function sbGet(table){
   const r=await fetch(`${SUPABASE_URL}/rest/v1/${table}?select=*&order=created_at.asc`,{headers:{"apikey":SUPABASE_KEY,"Authorization":`Bearer ${SUPABASE_KEY}`}});
